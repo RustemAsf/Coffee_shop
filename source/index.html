@@ -31,28 +31,34 @@
           <span class="main-nav__text">Интернет-магазин кофейных напитков</p>
         </div>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item site-list__item--active-one">
-              <a class="main-nav__link" href="index.html">Главная</a>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active-one">
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="">Каталог</a>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="">Доставка</a>
+            <li class="site-list__item">
+              <a class="site-list__link" href="">Доставка</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="">О нас</a>
+            <li class="site-list__item">
+              <a class="site-list__link" href="">О нас</a>
             </li>
           </ul>
         </div>
         <div class="main-nav__button-wrapper">
-          <svg class="user-logo" width="16" height="16">
-            <use xlink:href="img/sprite.svg#user-logo"></use>
-          </svg>
-          <svg class="union-logo" width="16" height="16">
-            <use xlink:href="img/sprite.svg#union-logo"></use>
-          </svg>
+          <div class="main-nav__user-wrapper">
+            <svg class="user-logo" width="16" height="16">
+              <use xlink:href="img/sprite.svg#user-logo"></use>
+            </svg>
+            <span class="user__logo-text">Войти</span>
+          </div>
+          <div class="main-nav__union-wrapper">
+            <svg class="union-logo" width="16" height="16">
+              <use xlink:href="img/sprite.svg#union-logo"></use>
+            </svg>
+            <span class="user__logo-text">Корзина</span>
+          </div>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
             <svg class="button-logo" width="16" height="16">

@@ -33,6 +33,7 @@
   display: none;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     display: block;
     width: 359px;
   }
@@ -40,20 +41,6 @@
   @media (min-width: $desktop-width) {
     width: 419px;
   }
-}
-
-.main-nav__list {
-  font-family: $font-drink;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: #7859cf;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
 }
 
 .main-nav__button-wrapper {
@@ -65,12 +52,19 @@
   @media (min-width: $tablet-width) {
     width: 76px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 221px;
+  }
 }
 
 .main-nav__logo-text {
-  width: 316px;
-  display: flex;
-  justify-content: space-between;
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .main-nav__toggle {
@@ -95,6 +89,7 @@
     font-size: 12px;
     line-height: 16px;
     color: #333333;
+    padding-top: 13px;
   }
 
   @media (min-width: $desktop-width) {
@@ -102,7 +97,53 @@
   }
 }
 
+.main-nav__list {
+  font-family: $font-drink;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #7859cf;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
 
+.main-nav__link {
+  text-decoration: none;
+}
 
+.main-nav__item {
+  @media (min-width: $tablet-width) {
+    &--active-one {
+      .main-nav_link::after {
+        position: absolute;
+        bottom: 11px;
+        left: 0;
+        content: "";
+        width: 103px;
+        border: 2px solid #7859cf;
+        border-radius: 10%;
+      }
+    }
+  }
+}
 
+.main-nav__user-wrapper {
+  @media (min-width: $desktop-width) {
+    width: 72px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
+.main-nav__union-wrapper {
+  @media (min-width: $desktop-width) {
+    width: 89px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
