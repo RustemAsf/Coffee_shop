@@ -1,6 +1,4 @@
 .main-nav {
-  min-height: 60px;
-  min-width: 320px;
   background: #ffffff;
 
    @media (min-width: $tablet-width) {
@@ -10,7 +8,25 @@
 }
 
 .main-nav__wrapper-desktop {
+  width: 280px;
+  min-height: 60px;
   margin: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 706px;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 80px;
+    width: 1340px;
+  }
 }
 
 .main-nav__wrapper {
@@ -20,10 +36,14 @@
     display: block;
     width: 359px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 419px;
+  }
 }
 
 .main-nav__list {
-  font-family: 'Montserrat';
+  font-family: $font-drink;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -32,16 +52,8 @@
   color: #7859cf;
   list-style-type: none;
   display: flex;
-  margin: 0;
-}
-
-.main-nav__logo-wrapper {
-  width: 280px;
-  display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  margin: 0;
 }
 
 .main-nav__button-wrapper {
@@ -49,10 +61,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 76px;
+  }
 }
 
-.main-nav__logo-link {
-  height: auto;
+.main-nav__logo-text {
+  width: 316px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-nav__toggle {
@@ -60,6 +78,28 @@
   border: none;
   outline: none;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    width: 126px;
+    font-family: $font-drink;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 
