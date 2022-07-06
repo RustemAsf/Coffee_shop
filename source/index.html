@@ -73,15 +73,15 @@
   <main class="page-main">
     <h1 class="visually-hidden">Drink2Go - магазин кофе</h1>
     <section class="advertisement">
-      <!-- <div class="advertisement__wrapper"> -->
-        <div class="advertisement__promo">
-          <h2 class="visually-hidden">Рекламный блок</h2>
-          <div class="advertisement__promo-img">
+      <div class="advertisement__promo">
+        <h2 class="visually-hidden">Рекламный блок</h2>
+        <div class="advertisement__promo-img">
 
-          </div>
-          <span class="advertisement__legend">
+        </div>
+        <div class="advertisement__promo-block">
+          <p class="advertisement__legend">
             Новинка!
-          </span>
+          </p>
           <blockquote class="advertisement__item">
             <cite class="advertisement__drink-name">Декаф Флэт Уайт</cite>
             <p class="advertisement__text">
@@ -89,6 +89,16 @@
               что нужно для расслабления после тяжёлого рабочего дня
             </p>
           </blockquote>
+          <button class="advertisement__reviews-prev" type="button">
+            <svg width="11" height="20">
+              <use xlink:href="img/sprite.svg#left-arrow"></use>
+            </svg>
+          </button>
+          <button class="advertisement__review-next" type="button">
+            <svg width="11" height="20">
+              <use xlink:href="img/sprite.svg#right-arrow"></use>
+            </svg>
+          </button>
           <div class="advertisement__price-block">
             <div class="advertisement__price">
               <p class="advertisement__crossed-text">
@@ -101,11 +111,22 @@
             <button class="advertisement__button" type="button">
               Заказать
             </button>
+            <div class="advertisement__button-block">
+              <button class="advertisement__button advertisement__button--active" type="button">
+
+              </button>
+              <button class="advertisement__button" type="button">
+
+              </button>
+              <button class="advertisement__button" type="button">
+
+              </button>
+            </div>
           </div>
         </div>
-      <!-- </div> -->
+      </div>
     </section>
-    <!-- <section class="advantages">
+    <section class="advantages">
       <div class="advantages__wrapper">
         <h2 class="advantages__title">преимущества</h2>
         <div class="advantages__slogan">
@@ -358,108 +379,108 @@
       </div>
     </section>
   </main> -->
-    <footer class="page-footer">
-      <div class="map">
+  <footer class="page-footer">
+    <div class="map">
 
+    </div>
+    <div class="page-footer__wrapper">
+
+      <div class="page-footer__social-block social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy" aria-label="вконтакте">
+              <svg class="twitter-icon" width="18" height="14">
+
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.pinterest.ru/keks_is_html_academy/" aria-label="пинтерест">
+              <svg class="facebook-icon" width="9" height="18">
+
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.ok.ru/htmlacademy" aria-label="ютуб">
+              <svg class="youtube-icon" width="15" height="13">
+
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
-      <div class="page-footer__wrapper">
-
-        <div class="page-footer__social-block social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="https://vk.com/htmlacademy" aria-label="вконтакте">
-                <svg class="twitter-icon" width="18" height="14">
-
-                </svg>
+      <div class="page-footer__info-block">
+        <div class="page-footer__shop-block shop">
+          <h4 class="page-footer__title">
+            Интернет-магазин
+          </h4>
+          <ul class="shop__list">
+            <li class="shop__item">
+              <a class="shop__link" href="" aria-label="каталог">
+                Каталог
               </a>
             </li>
-            <li class="social__item">
-              <a class="social__link" href="https://www.pinterest.ru/keks_is_html_academy/" aria-label="пинтерест">
-                <svg class="facebook-icon" width="9" height="18">
-
-                </svg>
+            <li class="shop__item">
+              <a class="shop__link" href="" aria-label="доставка">
+                Доставка
               </a>
             </li>
-            <li class="social__item">
-              <a class="social__link" href="https://www.ok.ru/htmlacademy" aria-label="ютуб">
-                <svg class="youtube-icon" width="15" height="13">
-
-                </svg>
+            <li class="shop__item">
+              <a class="shop__link" href="" aria-label="способы оплаты">
+                Способы оплаты
+              </a>
+            </li>
+            <li class="shop__item">
+              <a class="shop__link" href="" aria-label="о нас">
+                О нас
               </a>
             </li>
           </ul>
         </div>
-        <div class="page-footer__info-block">
-          <div class="page-footer__shop-block shop">
+        <div class="page-footer__media-block media">
+          <h4 class="page-footer__title">
+            Медиа
+          </h4>
+          <ul class="media__list">
+            <li class="media__item">
+              <a class="media__link" href="" aria-label="блог">
+                Блог
+              </a>
+            </li>
+            <li class="media__item">
+              <a class="media__link" href="" aria-label="сми">
+                Информация для СМИ
+              </a>
+            </li>
+            <li class="media__item">
+              <a class="media__link" href="" aria-label="информация">
+                Правовая информация
+              </a>
+            </li>
+          </ul>
+          <div class="page-footer__contacts-block contacts">
             <h4 class="page-footer__title">
-              Интернет-магазин
+              Контакты
             </h4>
-            <ul class="shop__list">
-              <li class="shop__item">
-                <a class="shop__link" href="" aria-label="каталог">
-                  Каталог
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a class="contacts__link">
+                  Санкт-Петербург, набережная реки Карповки, дом 5
                 </a>
               </li>
-              <li class="shop__item">
-                <a class="shop__link" href="" aria-label="доставка">
-                  Доставка
-                </a>
-              </li>
-              <li class="shop__item">
-                <a class="shop__link" href="" aria-label="способы оплаты">
-                  Способы оплаты
-                </a>
-              </li>
-              <li class="shop__item">
-                <a class="shop__link" href="" aria-label="о нас">
-                  О нас
+              <li class="contacts__item">
+                <a class="contacts__link">
+                  +7 (999) 999-99-99
                 </a>
               </li>
             </ul>
-          </div>
-          <div class="page-footer__media-block media">
-            <h4 class="page-footer__title">
-              Медиа
-            </h4>
-            <ul class="media__list">
-              <li class="media__item">
-                <a class="media__link" href="" aria-label="блог">
-                  Блог
-                </a>
-              </li>
-              <li class="media__item">
-                <a class="media__link" href="" aria-label="сми">
-                  Информация для СМИ
-                </a>
-              </li>
-              <li class="media__item">
-                <a class="media__link" href="" aria-label="информация">
-                  Правовая информация
-                </a>
-              </li>
-            </ul>
-            <div class="page-footer__contacts-block contacts">
-              <h4 class="page-footer__title">
-                Контакты
-              </h4>
-              <ul class="contacts__list">
-                <li class="contacts__item">
-                  <a class="contacts__link">
-                    Санкт-Петербург, набережная реки Карповки, дом 5
-                  </a>
-                </li>
-                <li class="contacts__item">
-                  <a class="contacts__link">
-                    +7 (999) 999-99-99
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
-    </footer>
-    <script src="js/script.js"></script>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
