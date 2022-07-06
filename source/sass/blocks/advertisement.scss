@@ -1,0 +1,40 @@
+.advertisement {
+  background-color: #f3ebe1;
+  // position: relative;
+  height: 656px;
+  // background-image: url("../img/back-advertisement.jpg");
+  // background-size: 100%, cover;
+  // background-repeat: no-repeat;
+  // background-position: -7% -2;
+}
+
+// .advertisement__wrapper {
+//   width: 280px;
+//   margin: 0 auto;
+// }
+
+.advertisement__legend {
+  font-family: $font-drink  ;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #7859cf;
+}
+
+.advertisement__promo {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.advertisement__promo-img {
+  height: 280px;
+  margin: 0 auto;
+  background-image: url("../img/flat-white.png");
+  background-repeat: no-repeat;
+  background-position: center 20px;
+  background-size: 100% cover;
+}
