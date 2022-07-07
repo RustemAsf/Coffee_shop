@@ -28,7 +28,7 @@
               <use xlink:href="img/sprite.svg#logo-drink-desktop"></use>
             </svg>
           </a>
-          <span class="main-nav__text">Интернет-магазин кофейных напитков</p>
+          <span class="main-nav__text">Интернет-магазин кофейных напитков</span>
         </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -112,14 +112,11 @@
               Заказать
             </button>
             <div class="advertisement__button-block">
-              <button class="advertisement__button advertisement__button--active" type="button">
-
+              <button class="advertisement__button-desktop advertisement__button-desktop--active" type="button">
               </button>
-              <button class="advertisement__button" type="button">
-
+              <button class="advertisement__button-desktop" type="button">
               </button>
-              <button class="advertisement__button" type="button">
-
+              <button class="advertisement__button-desktop" type="button">
               </button>
             </div>
           </div>
@@ -134,28 +131,56 @@
         </div>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <h3 class="advantages__title">Скорость</h3>
-            <p class="advantages__description">
-              Готовый напиток всегда под рукой — просто открой банку
-            </p>
+            <div class="advantages__logo">
+              <svg width="46" height="52">
+                <use xlink:href="img/sprite.svg#logo-watch"></use>
+              </svg>
+            </div>
+            <div class="advantages__text-block">
+              <h3 class="advantages__title-list">Скорость</h3>
+              <p class="advantages__description">
+                Готовый напиток всегда под рукой — просто открой банку
+              </p>
+            </div>
           </li>
           <li class="advantages__item">
-            <h3 class="advantages__title">Удобство</h3>
-            <p class="advantages__description">
-              Легко помещается и в карман, и в маленькую сумочку
-            </p>
+            <div class="advantages__logo">
+              <svg width="48" height="52">
+                <use xlink:href="img/sprite.svg#logo-convenience"></use>
+              </svg>
+            </div>
+            <div class="advantages__text-block">
+              <h3 class="advantages__title-list">Удобство</h3>
+              <p class="advantages__description">
+                Легко помещается и в карман, и в маленькую сумочку
+              </p>
+            </div>
           </li>
           <li class="advantages__item">
-            <h3 class="advantages__title">Бодрость</h3>
-            <p class="advantages__description">
-              Сбалансированная доза кофеина даст мощный заряд энергии
-            </p>
+            <div class="advantages__logo">
+              <svg width="38" height="52">
+                <use xlink:href="img/sprite.svg#logo-cheerfulness"></use>
+              </svg>
+            </div>
+            <div class="advantages__text-block">
+              <h3 class="advantages__title-list">Бодрость</h3>
+              <p class="advantages__description">
+                Сбалансированная доза кофеина даст мощный заряд энергии
+              </p>
+            </div>
           </li>
           <li class="advantages__item">
-            <h3 class="advantages__title">Экологичность</h3>
-            <p class="advantages__description">
-              Вся упаковка сделана из перерабатываемых материалов
-            </p>
+            <div class="advantages__logo">
+              <svg width="42" height="52">
+                <use xlink:href="img/sprite.svg#logo-ecology"></use>
+              </svg>
+            </div>
+            <div class="advantages__text-block">
+              <h3 class="advantages__title-list">Экологичность</h3>
+              <p class="advantages__description">
+                Вся упаковка сделана из перерабатываемых материалов
+              </p>
+            </div>
           </li>
         </ul>
 
@@ -174,7 +199,7 @@
             <legend class="catalog__title-scale">Цена</legend>
             <div class="catalog__scale-block scale">
               <div class="scale__bar" aria-label="шкала-цены">
-                <button class="scale__bar-range-toggle scale__bar-range-toggle--min">
+                <button class="scale__bar-range-toggle">
                   <span class="visually-hidden">Изменить минимальную цену.</span>
                 </button>
                 <button class="scale__bar-range-toggle scale__bar-range-toggle--max">
@@ -183,10 +208,11 @@
               </div>
             </div>
             <div class="catalog__price-field">
-              <input class="catalog__input catalog__input--left" id="number-label-left" type="number" value="0"
-                name="min-price" style="width: 143px">
-              <input class="catalog__input catalog__input--right" id="number-label-right" type="number" value="900"
-                name="max-price" style="width: 143px">
+              <input class="catalog__input" id="number-label-left" type="number" value="0"
+                name="min-price">
+                <div class="catalog__price-vector" aria-label="делитель между полями ввода цены"></div>
+              <input class="catalog__input" id="number-label-right" type="number" value="900"
+                name="max-price">
             </div>
           </fieldset>
 

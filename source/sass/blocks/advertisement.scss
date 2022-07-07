@@ -1,6 +1,10 @@
 .advertisement {
   background-color: #f3ebe1;
   min-height: 656px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 100px;
+  }
 }
 
 .advertisement__legend {
@@ -74,7 +78,7 @@
 
   @media (min-width: $desktop-width) {
     top: 347px;
-    left: 67px;
+    left: -50px;
   }
 }
 
@@ -105,8 +109,20 @@
   @media (min-width: $desktop-width) {
     display: flex;
     position: absolute;
-    top: 618px;
-    left: 579px;
+    top: 656px;
+    left: 552px;
+  }
+}
+
+.advertisement__button-desktop {
+  width: 62px;
+  height: 4px;
+  margin-right: 8px;
+  background-color: #ffffff;
+  border: 0;
+
+  &--active {
+    background-color: #7859cf;
   }
 }
 
@@ -260,3 +276,5 @@
   height: 40px;
   padding: 8px 20px 8px 20px;
 }
+
+
