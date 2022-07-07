@@ -61,7 +61,7 @@
           </div>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            <svg class="button-logo" width="16" height="16">
+            <svg class="main-nav__logo" width="16" height="16">
               <use xlink:href="img/sprite.svg#button-logo"></use>
             </svg>
           </button>
@@ -197,12 +197,12 @@
         <form class="catalog__form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog__scale">
             <legend class="catalog__title-scale">Цена</legend>
-            <div class="catalog__scale-block scale">
-              <div class="scale__bar" aria-label="шкала-цены">
-                <button class="scale__bar-range-toggle">
+            <div class="catalog__range-scale range">
+              <div class="range__bar" aria-label="шкала-цены">
+                <button class="range__bar-range-toggle">
                   <span class="visually-hidden">Изменить минимальную цену.</span>
                 </button>
-                <button class="scale__bar-range-toggle scale__bar-range-toggle--max">
+                <button class="range__bar-range-toggle range__bar-range-toggle--max">
                   <span class="visually-hidden">Изменить максимальную цену.</span>
                 </button>
               </div>
@@ -211,42 +211,42 @@
               <input class="catalog__input" id="number-label-left" type="number" value="0"
                 name="min-price">
                 <div class="catalog__price-vector" aria-label="делитель между полями ввода цены"></div>
-              <input class="catalog__input" id="number-label-right" type="number" value="900"
+              <input class="catalog__input catalog__input--right" id="number-label-right" type="number" value="900"
                 name="max-price">
             </div>
           </fieldset>
 
           <fieldset class="catalog__filter">
             <legend class="catalog__title-filter">Наличие молока</legend>
-            <ul class="catalog__list-components">
-              <li class="catalog__item-components">
+            <ul class="catalog__list">
+              <li class="catalog__item">
                 <label class="catalog__control" for="matter">
-                  <input class="visually-hidden catalog__control-block" type="radio" id="matter" name="product-item"
-                    value="no-matter" checked>
+                  <input class="visually-hidden catalog__control-block" type="radio" id="matter" name="product-application"
+                    value="drink-matter" checked>
                   <span class="catalog__mark"></span>
                   <span class="catalog__control-label-radio">Неважно</span>
                 </label>
               </li>
-              <li class="catalog__item-components">
+              <li class="catalog__item">
                 <label class="catalog__control" for="animal">
-                  <input class="visually-hidden catalog__control-block" type="radio" id="animal" name="animal-item"
-                    value="animal">
+                  <input class="visually-hidden catalog__control-block" type="radio" id="animal" name="product-application"
+                    value="drink-animal">
                   <span class="catalog__mark"></span>
                   <span class="catalog__control-label-radio">Только животное</span>
                 </label>
               </li>
-              <li class="catalog__item-components">
+              <li class="catalog__item">
                 <label class="catalog__control" for="vegetable">
                   <input class="visually-hidden catalog__control-block" type="radio" id="vegetable"
-                    name="vegetable-item" value="vegetable">
+                    name="product-application" value="drink-vegetable">
                   <span class="catalog__mark"></span>
                   <span class="catalog__control-label-radio">Только растительное</span>
                 </label>
               </li>
-              <li class="catalog__item-components">
+              <li class="catalog__item">
                 <label class="catalog__control" for="milk">
-                  <input class="visually-hidden catalog__control-block" type="radio" id="milk" name="milk-item"
-                    value="milk">
+                  <input class="visually-hidden catalog__control-block" type="radio" id="milk" name="product-application"
+                    value="drink-milk">
                   <span class="catalog__mark"></span>
                   <span class="catalog__control-label-radio">Без молока</span>
                 </label>
@@ -256,39 +256,39 @@
 
           <fieldset class="catalog__country">
             <legend class="catalog__title-filter">Страна произрастания</legend>
-            <ul class="catalog__list-country">
-              <li class="catalog__item-country">
-                <label class="catalog__control" for="brazil">
-                  <input class="visually-hidden catalog__control-block" type="checkbox" id="brazil" checked>
-                  <span class="catalog__mark"></span>
+            <ul class="catalog__list catalog__list--country">
+              <li class="catalog__item">
+                <label class="catalog__control-check" for="brazil">
+                  <input class="catalog__control-block" type="checkbox" id="brazil" checked>
+                  <span class="catalog__mark catalog__mark--check"></span>
                   <span class="catalog__control-label">Бразилия</span>
                 </label>
               </li>
-              <li class="catalog__item-country">
-                <label class="catalog__control" for="ethiopia">
-                  <input class="visually-hidden catalog__control-block" type="checkbox" id="ethiopia">
-                  <span class="catalog__mark"></span>
+              <li class="catalog__item">
+                <label class="catalog__control-check" for="ethiopia">
+                  <input class="catalog__control-block" type="checkbox" id="ethiopia">
+                  <span class="catalog__mark catalog__mark--check"></span>
                   <span class="catalog__control-label">Эфиопия</span>
                 </label>
               </li>
-              <li class="catalog__item-country">
-                <label class="catalog__control" for="сolombia">
-                  <input class="visually-hidden catalog__control-block" type="checkbox" id="сolombia">
-                  <span class="catalog__mark"></span>
+              <li class="catalog__item">
+                <label class="catalog__control-check" for="сolombia">
+                  <input class="catalog__control-block" type="checkbox" id="сolombia">
+                  <span class="catalog__mark catalog__mark--check"></span>
                   <span class="catalog__control-label">Колумбия</span>
                 </label>
               </li>
-              <li class="catalog__item-country">
-                <label class="catalog__control" for="costa-rica">
-                  <input class="visually-hidden catalog__control-block" type="checkbox" id="costa-rica">
-                  <span class="catalog__mark"></span>
+              <li class="catalog__item">
+                <label class="catalog__control-check" for="costa-rica">
+                  <input class="catalog__control-block" type="checkbox" id="costa-rica">
+                  <span class="catalog__mark catalog__mark--check"></span>
                   <span class="catalog__control-label">Коста-Рика</span>
                 </label>
               </li>
-              <li class="catalog__item-country">
+              <li class="catalog__item">
                 <label class="catalog__control" for="peru">
-                  <input class="visually-hidden catalog__control-block" type="checkbox" id="peru">
-                  <span class="catalog__mark"></span>
+                  <input class="catalog__control-block" type="checkbox" id="peru">
+                  <span class="catalog__mark catalog__mark--check"></span>
                   <span class="catalog__control-label">Перу</span>
                 </label>
               </li>
