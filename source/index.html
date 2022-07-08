@@ -186,339 +186,339 @@
 
       </div>
     </section>
-
     <section class="catalog">
       <div class="catalog__wrapper">
         <h2 class="catalog__title">Каталог</h2>
         <div class="catalog__slogan">
           <p class="catalog__text">Каталог кофейных напитков</p>
         </div>
-
-        <form class="catalog__form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="catalog__scale">
-            <legend class="catalog__title-scale">Цена</legend>
-            <div class="catalog__range-scale range">
-              <div class="range__bar" aria-label="шкала-цены">
-                <button class="range__bar-range-toggle">
-                  <span class="visually-hidden">Изменить минимальную цену.</span>
-                </button>
-                <button class="range__bar-range-toggle range__bar-range-toggle--max">
-                  <span class="visually-hidden">Изменить максимальную цену.</span>
-                </button>
+        <div class="catalog__block">
+          <form class="catalog__form" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="catalog__scale">
+              <legend class="catalog__title-scale">Цена</legend>
+              <div class="catalog__range-scale range">
+                <div class="range__bar" aria-label="шкала-цены">
+                  <button class="range__bar-range-toggle">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range__bar-range-toggle range__bar-range-toggle--max">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="catalog__price-field">
-              <input class="catalog__input" id="number-label-left" type="number" value="0" name="min-price">
-              <div class="catalog__price-vector" aria-label="делитель между полями ввода цены"></div>
-              <input class="catalog__input catalog__input--right" id="number-label-right" type="number" value="900"
-                name="max-price">
-            </div>
-          </fieldset>
-
-          <fieldset class="catalog__filter">
-            <legend class="catalog__title-filter">Наличие молока</legend>
-            <ul class="catalog__list">
-              <li class="catalog__item">
-                <label class="catalog__control" for="matter">
-                  <input class="visually-hidden catalog__control-block" type="radio" id="matter"
-                    name="product-application" value="drink-matter" checked>
-                  <span class="catalog__mark"></span>
-                  <span class="catalog__control-label-radio">Неважно</span>
-                </label>
-              </li>
-              <li class="catalog__item">
-                <label class="catalog__control" for="animal">
-                  <input class="visually-hidden catalog__control-block" type="radio" id="animal"
-                    name="product-application" value="drink-animal">
-                  <span class="catalog__mark"></span>
-                  <span class="catalog__control-label-radio">Только животное</span>
-                </label>
-              </li>
-              <li class="catalog__item">
-                <label class="catalog__control" for="vegetable">
-                  <input class="visually-hidden catalog__control-block" type="radio" id="vegetable"
-                    name="product-application" value="drink-vegetable">
-                  <span class="catalog__mark"></span>
-                  <span class="catalog__control-label-radio">Только растительное</span>
-                </label>
-              </li>
-              <li class="catalog__item">
-                <label class="catalog__control" for="milk">
-                  <input class="visually-hidden catalog__control-block" type="radio" id="milk"
-                    name="product-application" value="drink-milk">
-                  <span class="catalog__mark"></span>
-                  <span class="catalog__control-label-radio">Без молока</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="catalog__country">
-            <legend class="catalog__title-filter">Страна произрастания</legend>
-            <ul class="catalog__list catalog__list--country">
-              <li class="catalog__item">
-                <label class="catalog__control-check" for="brazil">
-                  <input class="catalog__control-block" type="checkbox" id="brazil" checked>
-                  <span class="catalog__mark catalog__mark--check"></span>
-                  <span class="catalog__control-label">Бразилия</span>
-                </label>
-              </li>
-              <li class="catalog__item">
-                <label class="catalog__control-check" for="ethiopia">
-                  <input class="catalog__control-block" type="checkbox" id="ethiopia">
-                  <span class="catalog__mark catalog__mark--check"></span>
-                  <span class="catalog__control-label">Эфиопия</span>
-                </label>
-              </li>
-              <li class="catalog__item">
-                <label class="catalog__control-check" for="сolombia">
-                  <input class="catalog__control-block" type="checkbox" id="сolombia">
-                  <span class="catalog__mark catalog__mark--check"></span>
-                  <span class="catalog__control-label">Колумбия</span>
-                </label>
-              </li>
-              <li class="catalog__item">
-                <label class="catalog__control-check" for="costa-rica">
-                  <input class="catalog__control-block" type="checkbox" id="costa-rica">
-                  <span class="catalog__mark catalog__mark--check"></span>
-                  <span class="catalog__control-label">Коста-Рика</span>
-                </label>
-              </li>
-              <li class="catalog__item">
-                <label class="catalog__control" for="peru">
-                  <input class="catalog__control-block" type="checkbox" id="peru">
-                  <span class="catalog__mark catalog__mark--check"></span>
-                  <span class="catalog__control-label">Перу</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="catalog__button" type="button">
-            Сбросить фильтр
-          </button>
-        </form>
-
-        <div class="catalog__filter">
-          <div class="catalog__filter-block">
-            <p class="catalog__filter-text">
-              Сортировка:
-            </p>
-            <span class="catalog__filter-text catalog__filter-text--item">
-              по умолчанию
-            </span>
-            <button class="catalog__filter-button" type="button">
-              <svg width="10" height="6">
-                <use xlink:href="img/sprite.svg#check-button-filter"></use>
-              </svg>
+              <div class="catalog__price-field">
+                <input class="catalog__input" id="number-label-left" type="number" value="0" name="min-price">
+                <div class="catalog__price-vector" aria-label="делитель между полями ввода цены"></div>
+                <input class="catalog__input catalog__input--right" id="number-label-right" type="number" value="900"
+                  name="max-price">
+              </div>
+            </fieldset>
+            <fieldset class="catalog__filter-milk">
+              <legend class="catalog__title-filter">Наличие молока</legend>
+              <ul class="catalog__list">
+                <li class="catalog__item">
+                  <label class="catalog__control" for="matter">
+                    <input class="visually-hidden catalog__control-block" type="radio" id="matter"
+                      name="product-application" value="drink-matter" checked>
+                    <span class="catalog__mark"></span>
+                    <span class="catalog__control-label-radio">Неважно</span>
+                  </label>
+                </li>
+                <li class="catalog__item">
+                  <label class="catalog__control" for="animal">
+                    <input class="visually-hidden catalog__control-block" type="radio" id="animal"
+                      name="product-application" value="drink-animal">
+                    <span class="catalog__mark"></span>
+                    <span class="catalog__control-label-radio">Только животное</span>
+                  </label>
+                </li>
+                <li class="catalog__item">
+                  <label class="catalog__control" for="vegetable">
+                    <input class="visually-hidden catalog__control-block" type="radio" id="vegetable"
+                      name="product-application" value="drink-vegetable">
+                    <span class="catalog__mark"></span>
+                    <span class="catalog__control-label-radio">Только растительное</span>
+                  </label>
+                </li>
+                <li class="catalog__item">
+                  <label class="catalog__control" for="milk">
+                    <input class="visually-hidden catalog__control-block" type="radio" id="milk"
+                      name="product-application" value="drink-milk">
+                    <span class="catalog__mark"></span>
+                    <span class="catalog__control-label-radio">Без молока</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="catalog__country">
+              <legend class="catalog__title-filter">Страна произрастания</legend>
+              <ul class="catalog__list catalog__list--country">
+                <li class="catalog__item">
+                  <label class="catalog__control-check" for="brazil">
+                    <input class="catalog__control-block" type="checkbox" id="brazil" checked>
+                    <span class="catalog__mark catalog__mark--check"></span>
+                    <span class="catalog__control-label">Бразилия</span>
+                  </label>
+                </li>
+                <li class="catalog__item">
+                  <label class="catalog__control-check" for="ethiopia">
+                    <input class="catalog__control-block" type="checkbox" id="ethiopia">
+                    <span class="catalog__mark catalog__mark--check"></span>
+                    <span class="catalog__control-label">Эфиопия</span>
+                  </label>
+                </li>
+                <li class="catalog__item">
+                  <label class="catalog__control-check" for="сolombia">
+                    <input class="catalog__control-block" type="checkbox" id="сolombia">
+                    <span class="catalog__mark catalog__mark--check"></span>
+                    <span class="catalog__control-label">Колумбия</span>
+                  </label>
+                </li>
+                <li class="catalog__item">
+                  <label class="catalog__control-check" for="costa-rica">
+                    <input class="catalog__control-block" type="checkbox" id="costa-rica">
+                    <span class="catalog__mark catalog__mark--check"></span>
+                    <span class="catalog__control-label">Коста-Рика</span>
+                  </label>
+                </li>
+                <li class="catalog__item">
+                  <label class="catalog__control" for="peru">
+                    <input class="catalog__control-block" type="checkbox" id="peru">
+                    <span class="catalog__mark catalog__mark--check"></span>
+                    <span class="catalog__control-label">Перу</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="catalog__button" type="button">
+              Сбросить фильтр
             </button>
+          </form>
+
+          <div class="catalog__filter">
+            <div class="catalog__filter-block">
+              <p class="catalog__filter-text">
+                Сортировка:
+              </p>
+              <span class="catalog__filter-text catalog__filter-text--item">
+                по умолчанию
+              </span>
+              <button class="catalog__filter-button" type="button">
+                <svg width="10" height="6">
+                  <use xlink:href="img/sprite.svg#check-button-filter"></use>
+                </svg>
+              </button>
+            </div>
+            <ul class="catalog__list-filter">
+              <li class="catalog__item-filter catalog__item-filter--one">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/flat-white-mobile-filter.webp 1x, img/flat-white-mobile-filter@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/flat-white-mobile-filter.webp 1x, img/flat-white-mobile-filter@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)"
+                    srcset="img/flat-white-mobile-filter.webp 1x, img/flat-white-mobile-filter@2x.webp 2x">
+                  <source media="(min-width: 1440px)"
+                    srcset="img/flat-white-mobile-filter-filter.png 1x, img/flat-white-mobile-filter-filter@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/flat-white-mobile-filter.png 1x, img/flat-white-mobile-filter@2x.png 2x">
+                  <img class="catalog__image-filter" src="img/flat-white-mobile-filter.png"
+                    srcset="img/flat-white-mobile-filter@2x.png 2x" alt="Фото товара">
+                </picture>
+                <h3 class="catalog__title-sorting">Декаф Флэт Уайт</h3>
+                <p class="catalog__text-filter">
+                  Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                </p>
+                <div class="catalog__button-block">
+                  <span class="catalog__button-block-text">
+                    225₽
+                  </span>
+                  <button class="catalog__button-filter" type="button">
+                    <svg width="20" height="16">
+                      <use xlink:href="img/sprite.svg#buy-logo"></use>
+                    </svg>
+                    В корзину
+                  </button>
+                </div>
+              </li>
+              <li class="catalog__item-filter catalog__item-filter--two">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/flat-blue-filter.webp 1x, img/flat-blue-filter@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/flat-blue-filter.webp 1x, img/flat-blue-filter@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)"
+                    srcset="img/flat-blue-filter.webp 1x, img/flat-blue-filter@2x.webp 2x">
+                  <source media="(min-width: 1440px)"
+                    srcset="img/flat-blue-filter.png 1x, img/flat-blue-filter@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/flat-blue-filter.png 1x, img/flat-blue-filter@2x.png 2x">
+                  <img class="catalog__image-filter" src="img/flat-blue-filter.png"
+                    srcset="img/flat-blue-filter@2x.png 2x" alt="Фото товара">
+                </picture>
+                <h3 class="catalog__title-sorting">Декаф Флэт Уайт</h3>
+                <p class="catalog__text-filter">
+                  Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                </p>
+                <div class="catalog__button-block">
+                  <span class="catalog__button-block-text">
+                    225₽
+                  </span>
+                  <button class="catalog__button-filter" type="button">
+                    <svg width="20" height="16">
+                      <use xlink:href="img/sprite.svg#buy-logo"></use>
+                    </svg>
+                    В корзину
+                  </button>
+                </div>
+              </li>
+              <li class="catalog__item-filter catalog__item-filter--three">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/flat-black-filter.webp 1x, img/flat-black-filter@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/flat-black-filter.webp 1x, img/flat-black-filter@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)"
+                    srcset="img/flat-black-filter.webp 1x, img/flat-black-filter@2x.webp 2x">
+                  <source media="(min-width: 1440px)"
+                    srcset="img/flat-black-filter.png 1x, img/flat-black-filter@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/flat-blue-filter.png 1x, img/flat-blue-filter@2x.png 2x">
+                  <img class="catalog__image-filter" src="img/flat-black-filter.png"
+                    srcset="img/flat-black-filter@2x.png 2x" alt="Фото товара">
+                </picture>
+                <h3 class="catalog__title-sorting">Декаф Флэт Уайт</h3>
+                <p class="catalog__text-filter">
+                  Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                </p>
+                <div class="catalog__button-block">
+                  <span class="catalog__button-block-text">
+                    225₽
+                  </span>
+                  <button class="catalog__button-filter" type="button">
+                    <svg width="20" height="16">
+                      <use xlink:href="img/sprite.svg#buy-logo"></use>
+                    </svg>
+                    В корзину
+                  </button>
+                </div>
+              </li>
+              <li class="catalog__item-filter catalog__item-filter--four">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/flat-pink-filter.webp 1x, img/flat-pink-filter@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/flat-pink-filter.webp 1x, img/flat-pink-filter@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)"
+                    srcset="img/flat-pink-filter.webp 1x, img/flat-pink-filter@2x.webp 2x">
+                  <source media="(min-width: 1440px)"
+                    srcset="img/flat-pink-filter.png 1x, img/flat-pink-filter@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/flat-brown-filter.png 1x, img/flat-brown-filter@2x.png 2x">
+                  <img class="catalog__image-filter" src="img/flat-pink-filter.png"
+                    srcset="img/flat-pink-filter@2x.png 2x" alt="Фото товара">
+                </picture>
+                <h3 class="catalog__title-sorting">Декаф Флэт Уайт</h3>
+                <p class="catalog__text-filter">
+                  Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                </p>
+                <div class="catalog__button-block">
+                  <span class="catalog__button-block-text">
+                    225₽
+                  </span>
+                  <button class="catalog__button-filter" type="button">
+                    <svg width="20" height="16">
+                      <use xlink:href="img/sprite.svg#buy-logo"></use>
+                    </svg>
+                    В корзину
+                  </button>
+                </div>
+              </li>
+              <li class="catalog__item-filter catalog__item-filter--five">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/flat-brown-filter.webp 1x, img/flat-brown-filter@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/flat-brown-filter.webp 1x, img/flat-brown-filter@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)"
+                    srcset="img/flat-brown-filter.webp 1x, img/flat-brown-filter@2x.webp 2x">
+                  <source media="(min-width: 1440px)"
+                    srcset="img/flat-brown-filter.png 1x, img/flat-brown-filter@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/flat-brown-filter.png 1x, img/flat-brown-filter@2x.png 2x">
+                  <img class="catalog__image-filter" src="img/flat-brown-filter.png"
+                    srcset="img/flat-brown-filter@2x.png 2x" alt="Фото товара">
+                </picture>
+                <h3 class="catalog__title-sorting">Декаф Флэт Уайт</h3>
+                <p class="catalog__text-filter">
+                  Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                </p>
+                <div class="catalog__button-block">
+                  <span class="catalog__button-block-text">
+                    225₽
+                  </span>
+                  <button class="catalog__button-filter" type="button">
+                    <svg width="20" height="16">
+                      <use xlink:href="img/sprite.svg#buy-logo"></use>
+                    </svg>
+                    В корзину
+                  </button>
+                </div>
+              </li>
+              <li class="catalog__item-filter">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/flat-yellow-filter.webp 1x, img/flat-yellow-filter@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/flat-yellow-filter.webp 1x, img/flat-yellow-filter@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)"
+                    srcset="img/flat-yellow-filter.webp 1x, img/flat-yellow-filter@2x.webp 2x">
+                  <source media="(min-width: 1440px)"
+                    srcset="img/flat-yellow-filter.png 1x, img/flat-yellow-filter@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/flat-yellow-filter.png 1x, img/flat-yellow-filter@2x.png 2x">
+                  <img class="catalog__image-filter" src="img/flat-yellow-filter.png"
+                    srcset="img/flat-yellow-filter@2x.png 2x" alt="Фото товара">
+                </picture>
+                <h3 class="catalog__title-sorting">Декаф Флэт Уайт</h3>
+                <p class="catalog__text-filter">
+                  Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                </p>
+                <div class="catalog__button-block">
+                  <span class="catalog__button-block-text">
+                    225₽
+                  </span>
+                  <button class="catalog__button-filter" type="button">
+                    <svg width="20" height="16">
+                      <use xlink:href="img/sprite.svg#buy-logo"></use>
+                    </svg>
+                    В корзину
+                  </button>
+                </div>
+              </li>
+            </ul>
           </div>
-
-          <ul class="catalog__list-filter">
-            <li class="catalog__item-filter">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/flat-white-mobile-filter.webp 1x, img/flat-white-mobile-filter@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/flat-white-mobile-filter.webp 1x, img/flat-white-mobile-filter@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 320px)"
-                  srcset="img/flat-white-mobile-filter.webp 1x, img/flat-white-mobile-filter@2x.webp 2x">
-                <source media="(min-width: 1440px)"
-                  srcset="img/flat-white-mobile-filter-filter.png 1x, img/flat-white-mobile-filter-filter@2x.png 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/flat-white-mobile-filter.png 1x, img/flat-white-mobile-filter@2x.png 2x">
-                <img class="catalog__image-filter" src="img/flat-white-mobile-filter.png"
-                  srcset="img/flat-white-mobile-filter@2x.png 2x" alt="Фото товара">
-              </picture>
-              <h3 class="catalog__title-sorting">Декаф Флэт Уайт</h3>
-              <p class="catalog__text-filter">
-                Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-              </p>
-              <div class="catalog__button-block">
-                <span class="catalog__button-block-text">
-                  225₽
-                </span>
-                <button class="catalog__button-filter" type="button">
-                  <svg width="20" height="16">
-                    <use xlink:href="img/sprite.svg#buy-logo"></use>
-                  </svg>
-                  В корзину
-                </button>
-              </div>
-            </li>
-            <li class="catalog__item-filter">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/flat-blue-filter.webp 1x, img/flat-blue-filter@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/flat-blue-filter.webp 1x, img/flat-blue-filter@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 320px)"
-                  srcset="img/flat-blue-filter.webp 1x, img/flat-blue-filter@2x.webp 2x">
-                <source media="(min-width: 1440px)"
-                  srcset="img/flat-blue-filter.png 1x, img/flat-blue-filter@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/flat-blue-filter.png 1x, img/flat-blue-filter@2x.png 2x">
-                <img class="catalog__image-filter" src="img/flat-blue-filter.png"
-                  srcset="img/flat-blue-filter@2x.png 2x" alt="Фото товара">
-              </picture>
-              <h3 class="catalog__title-sorting">Декаф Флэт Уайт</h3>
-              <p class="catalog__text-filter">
-                Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-              </p>
-              <div class="catalog__button-block">
-                <span class="catalog__button-block-text">
-                  225₽
-                </span>
-                <button class="catalog__button-filter" type="button">
-                  <svg width="20" height="16">
-                    <use xlink:href="img/sprite.svg#buy-logo"></use>
-                  </svg>
-                  В корзину
-                </button>
-              </div>
-            </li>
-            <li class="catalog__item-filter">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/flat-black-filter.webp 1x, img/flat-black-filter@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/flat-black-filter.webp 1x, img/flat-black-filter@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 320px)"
-                  srcset="img/flat-black-filter.webp 1x, img/flat-black-filter@2x.webp 2x">
-                <source media="(min-width: 1440px)"
-                  srcset="img/flat-black-filter.png 1x, img/flat-black-filter@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/flat-blue-filter.png 1x, img/flat-blue-filter@2x.png 2x">
-                <img class="catalog__image-filter" src="img/flat-black-filter.png"
-                  srcset="img/flat-black-filter@2x.png 2x" alt="Фото товара">
-              </picture>
-              <h3 class="catalog__title-sorting">Декаф Флэт Уайт</h3>
-              <p class="catalog__text-filter">
-                Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-              </p>
-              <div class="catalog__button-block">
-                <span class="catalog__button-block-text">
-                  225₽
-                </span>
-                <button class="catalog__button-filter" type="button">
-                  <svg width="20" height="16">
-                    <use xlink:href="img/sprite.svg#buy-logo"></use>
-                  </svg>
-                  В корзину
-                </button>
-              </div>
-            </li>
-            <li class="catalog__item-filter">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/flat-pink-filter.webp 1x, img/flat-pink-filter@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/flat-pink-filter.webp 1x, img/flat-pink-filter@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 320px)"
-                  srcset="img/flat-pink-filter.webp 1x, img/flat-pink-filter@2x.webp 2x">
-                <source media="(min-width: 1440px)"
-                  srcset="img/flat-pink-filter.png 1x, img/flat-pink-filter@2x.png 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/flat-brown-filter.png 1x, img/flat-brown-filter@2x.png 2x">
-                <img class="catalog__image-filter" src="img/flat-pink-filter.png"
-                  srcset="img/flat-pink-filter@2x.png 2x" alt="Фото товара">
-              </picture>
-              <h3 class="catalog__title-sorting">Декаф Флэт Уайт</h3>
-              <p class="catalog__text-filter">
-                Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-              </p>
-              <div class="catalog__button-block">
-                <span class="catalog__button-block-text">
-                  225₽
-                </span>
-                <button class="catalog__button-filter" type="button">
-                  <svg width="20" height="16">
-                    <use xlink:href="img/sprite.svg#buy-logo"></use>
-                  </svg>
-                  В корзину
-                </button>
-              </div>
-            </li>
-            <li class="catalog__item-filter">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/flat-brown-filter.webp 1x, img/flat-brown-filter@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/flat-brown-filter.webp 1x, img/flat-brown-filter@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 320px)"
-                  srcset="img/flat-brown-filter.webp 1x, img/flat-brown-filter@2x.webp 2x">
-                <source media="(min-width: 1440px)"
-                  srcset="img/flat-brown-filter.png 1x, img/flat-brown-filter@2x.png 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/flat-brown-filter.png 1x, img/flat-brown-filter@2x.png 2x">
-                <img class="catalog__image-filter" src="img/flat-brown-filter.png"
-                  srcset="img/flat-brown-filter@2x.png 2x" alt="Фото товара">
-              </picture>
-              <h3 class="catalog__title-sorting">Декаф Флэт Уайт</h3>
-              <p class="catalog__text-filter">
-                Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-              </p>
-              <div class="catalog__button-block">
-                <span class="catalog__button-block-text">
-                  225₽
-                </span>
-                <button class="catalog__button-filter" type="button">
-                  <svg width="20" height="16">
-                    <use xlink:href="img/sprite.svg#buy-logo"></use>
-                  </svg>
-                  В корзину
-                </button>
-              </div>
-            </li>
-            <li class="catalog__item-filter">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/flat-yellow-filter.webp 1x, img/flat-yellow-filter@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/flat-yellow-filter.webp 1x, img/flat-yellow-filter@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 320px)"
-                  srcset="img/flat-yellow-filter.webp 1x, img/flat-yellow-filter@2x.webp 2x">
-                <source media="(min-width: 1440px)"
-                  srcset="img/flat-yellow-filter.png 1x, img/flat-yellow-filter@2x.png 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/flat-yellow-filter.png 1x, img/flat-yellow-filter@2x.png 2x">
-                <img class="catalog__image-filter" src="img/flat-yellow-filter.png"
-                  srcset="img/flat-yellow-filter@2x.png 2x" alt="Фото товара">
-              </picture>
-              <h3 class="catalog__title-sorting">Декаф Флэт Уайт</h3>
-              <p class="catalog__text-filter">
-                Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-              </p>
-              <div class="catalog__button-block">
-                <span class="catalog__button-block-text">
-                  225₽
-                </span>
-                <button class="catalog__button-filter" type="button">
-                  <svg width="20" height="16">
-                    <use xlink:href="img/sprite.svg#buy-logo"></use>
-                  </svg>
-                  В корзину
-                </button>
-              </div>
-            </li>
-          </ul>
-
         </div>
         <div class="catalog__toggles">
           <button class="catalog__toggle" type="button">
-            <svg width="6" height="10">
+            <svg class="catalog__toggle-logo" width="6" height="10">
               <use xlink:href="img/sprite.svg#left-arrow-small"></use>
             </svg>
+            <span class="catalog__toggle-text">Назад</span>
           </button>
           <button class="catalog__toggle  type=" button">1</button>
           <button class="catalog__toggle catalog__toggle--current" type="button">2</button>
           <button class="catalog__toggle" type="button">3</button>
           <button class="catalog__toggle" type="button">
-            <svg width="6" height="10">
+            <svg class="catalog__toggle-logo" width="6" height="10">
               <use xlink:href="img/sprite.svg#right-arrow-small"></use>
             </svg>
+            <span class="catalog__toggle-text">Вперед</span>
           </button>
         </div>
       </div>
     </section>
-  </main> -->
+  </main>
   <footer class="page-footer">
     <div class="map">
 

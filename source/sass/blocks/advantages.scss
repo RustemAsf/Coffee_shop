@@ -1,5 +1,13 @@
 .advantages {
   min-height: 902px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 454px;
+  }
 }
 
 .advantages__wrapper {
@@ -14,6 +22,7 @@
 
   @media (min-width: $desktop-width) {
    width: 1360px;
+   padding: 0;
   }
 }
 
@@ -81,6 +90,7 @@
 
    @media (min-width: $desktop-width) {
     text-align: center;
+    margin-bottom: 10px;
    }
 }
 
@@ -140,5 +150,6 @@
 
    @media (min-width: $desktop-width) {
     display: block;
-   }
+  }
 }
+
