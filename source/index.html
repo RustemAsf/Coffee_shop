@@ -36,13 +36,13 @@
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог</a>
+              <a class="site-list__link" href="#">Каталог</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="">Доставка</a>
+              <a class="site-list__link" href="#">Доставка</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="">О нас</a>
+              <a class="site-list__link" href="#">О нас</a>
             </li>
           </ul>
         </div>
@@ -51,13 +51,13 @@
             <svg class="user-logo" width="16" height="16">
               <use xlink:href="img/sprite.svg#user-logo"></use>
             </svg>
-            <span class="user__logo-text">Войти</span>
+            <span class="main-nav__user-text">Войти</span>
           </div>
           <div class="main-nav__union-wrapper">
             <svg class="union-logo" width="16" height="16">
               <use xlink:href="img/sprite.svg#union-logo"></use>
             </svg>
-            <span class="user__logo-text">Корзина</span>
+            <span class="main-nav__user-text">Корзина</span>
           </div>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -465,7 +465,7 @@
                   </button>
                 </div>
               </li>
-              <li class="catalog__item-filter">
+              <li class="catalog__item-filter catalog__item-filter--six">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)"
                     srcset="img/flat-yellow-filter.webp 1x, img/flat-yellow-filter@2x.webp 2x">
@@ -506,7 +506,7 @@
             </svg>
             <span class="catalog__toggle-text">Назад</span>
           </button>
-          <button class="catalog__toggle  type=" button">1</button>
+          <button class="catalog__toggle"  type="button">1</button>
           <button class="catalog__toggle catalog__toggle--current" type="button">2</button>
           <button class="catalog__toggle" type="button">3</button>
           <button class="catalog__toggle" type="button">
@@ -524,93 +524,111 @@
 
     </div>
     <div class="page-footer__wrapper">
-
-      <div class="page-footer__social-block social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="https://vk.com/htmlacademy" aria-label="вконтакте">
-              <svg class="twitter-icon" width="18" height="14">
-
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://www.pinterest.ru/keks_is_html_academy/" aria-label="пинтерест">
-              <svg class="facebook-icon" width="9" height="18">
-
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://www.ok.ru/htmlacademy" aria-label="ютуб">
-              <svg class="youtube-icon" width="15" height="13">
-
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__info-block">
-        <div class="page-footer__shop-block shop">
-          <h4 class="page-footer__title">
-            Интернет-магазин
-          </h4>
-          <ul class="shop__list">
-            <li class="shop__item">
-              <a class="shop__link" href="" aria-label="каталог">
-                Каталог
+      <div class="page-footer__main-block">
+        <div class="page-footer__social-block social">
+          <a class="page-footer__logo-link" href="index.html">
+            <svg class="page-footer__logo-mobile" width="82" height="36">
+              <use xlink:href="img/sprite.svg#logo-drink-footer"></use>
+            </svg>
+            <svg class="page-footer__logo-desktop" width="170" height="36">
+              <use xlink:href="img/sprite.svg#logo-drink-desktop"></use>
+            </svg>
+          </a>
+          <p class="page-footer__text">
+            Интернет-магазин кофейных напитков
+          </p>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="https://vk.com/htmlacademy" aria-label="вконтакте">
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite.svg#logo-vk"></use>
+                </svg>
               </a>
             </li>
-            <li class="shop__item">
-              <a class="shop__link" href="" aria-label="доставка">
-                Доставка
+            <li class="social__item">
+              <a class="social__link" href="https://www.pinterest.ru/keks_is_html_academy/" aria-label="пинтерест">
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite.svg#logo-pinterest"></use>
+                </svg>
               </a>
             </li>
-            <li class="shop__item">
-              <a class="shop__link" href="" aria-label="способы оплаты">
-                Способы оплаты
-              </a>
-            </li>
-            <li class="shop__item">
-              <a class="shop__link" href="" aria-label="о нас">
-                О нас
+            <li class="social__item">
+              <a class="social__link" href="https://www.ok.ru/htmlacademy" aria-label="ютуб">
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite.svg#logo-ok"></use>
+                </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="page-footer__media-block media">
-          <h4 class="page-footer__title">
-            Медиа
-          </h4>
-          <ul class="media__list">
-            <li class="media__item">
-              <a class="media__link" href="" aria-label="блог">
-                Блог
-              </a>
-            </li>
-            <li class="media__item">
-              <a class="media__link" href="" aria-label="сми">
-                Информация для СМИ
-              </a>
-            </li>
-            <li class="media__item">
-              <a class="media__link" href="" aria-label="информация">
-                Правовая информация
-              </a>
-            </li>
-          </ul>
+        <div class="page-footer__info-block">
+          <div class="page-footer__shop-block shop">
+            <h4 class="page-footer__title">
+              Интернет-магазин
+            </h4>
+            <ul class="shop__list">
+              <li class="shop__item">
+                <a class="shop__link" href="#" aria-label="каталог">
+                  Каталог
+                </a>
+              </li>
+              <li class="shop__item">
+                <a class="shop__link" href="#" aria-label="доставка">
+                  Доставка
+                </a>
+              </li>
+              <li class="shop__item">
+                <a class="shop__link" href="#" aria-label="способы оплаты">
+                  Способы оплаты
+                </a>
+              </li>
+              <li class="shop__item">
+                <a class="shop__link" href="#" aria-label="о нас">
+                  О нас
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__media-block media">
+            <h4 class="page-footer__title">
+              Медиа
+            </h4>
+            <ul class="media__list">
+              <li class="media__item">
+                <a class="media__link" href="#" aria-label="блог">
+                  Блог
+                </a>
+              </li>
+              <li class="media__item">
+                <a class="media__link" href="#" aria-label="сми">
+                  Информация для СМИ
+                </a>
+              </li>
+              <li class="media__item">
+                <a class="media__link" href="#" aria-label="информация">
+                  Правовая информация
+                </a>
+              </li>
+            </ul>
+          </div>
           <div class="page-footer__contacts-block contacts">
             <h4 class="page-footer__title">
               Контакты
             </h4>
             <ul class="contacts__list">
               <li class="contacts__item">
-                <a class="contacts__link">
+                <svg class="contacts__item-address" width="13" height="16">
+                  <use xlink:href="img/sprite.svg#logo-contacts"></use>
+                </svg>
+                <a class="contacts__link" href="#">
                   Санкт-Петербург, набережная реки Карповки, дом 5
                 </a>
               </li>
               <li class="contacts__item">
-                <a class="contacts__link">
+                <svg class="contacts__item-phone" width="13" height="16">
+                  <use xlink:href="img/sprite.svg#logo-phone"></use>
+                </svg>
+                <a class="contacts__link" href="#">
                   +7 (999) 999-99-99
                 </a>
               </li>
@@ -618,7 +636,16 @@
           </div>
         </div>
       </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано в HTML Academy</b>
+        <a class="copyright__link" href="https://htmlacademy.ru" aria-label="лэйбл академии">
+          <svg class="copyright__academy" width="12" height="16">
+            <use xlink:href="img/sprite.svg#logo-academy"></use>
+          </svg>
+        </a>
+      </div>
     </div>
+
   </footer>
   <script src="js/script.js"></script>
 </body>

@@ -8,11 +8,11 @@
 
   @media (min-width: $tablet-width) {
     width: 192px;
-   }
+  }
 
-   @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 274px;
-   }
+  }
 }
 
 .range__bar-range-toggle {
@@ -33,11 +33,11 @@
       @media (min-width: $tablet-width) {
         top: -11px;
         left: 181px;
-       }
+      }
 
-       @media (min-width: $desktop-width) {
+      @media (min-width: $desktop-width) {
         top: -11px;
         left: 273px;
-       }
+    }
   }
 }
