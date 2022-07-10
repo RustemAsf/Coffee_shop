@@ -3,6 +3,9 @@
 
 <head>
   <meta name="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Drink2Go</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -61,13 +64,9 @@
           </div>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            <svg class="main-nav__logo" width="16" height="16">
-              <use xlink:href="img/sprite.svg#button-logo"></use>
-            </svg>
           </button>
         </div>
       </div>
-
     </nav>
   </header>
   <main class="page-main">
@@ -76,7 +75,6 @@
       <div class="advertisement__promo">
         <h2 class="visually-hidden">Рекламный блок</h2>
         <div class="advertisement__promo-img">
-
         </div>
         <div class="advertisement__promo-block">
           <p class="advertisement__legend">
@@ -506,7 +504,7 @@
             </svg>
             <span class="catalog__toggle-text">Назад</span>
           </button>
-          <button class="catalog__toggle"  type="button">1</button>
+          <button class="catalog__toggle" type="button">1</button>
           <button class="catalog__toggle catalog__toggle--current" type="button">2</button>
           <button class="catalog__toggle" type="button">3</button>
           <button class="catalog__toggle" type="button">
@@ -519,10 +517,12 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer">
-    <div class="map">
 
+  <footer class="page-footer">
+    <div class="page-footer__map-block">
+      <div class="page-footer__map" id="map"></div>
     </div>
+
     <div class="page-footer__wrapper">
       <div class="page-footer__main-block">
         <div class="page-footer__social-block social">
@@ -645,9 +645,11 @@
         </a>
       </div>
     </div>
-
   </footer>
-  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -46,6 +46,7 @@
   },
   "type": "module",
   "dependencies": {
-    "gulp-dart-sass": "^1.0.2"
+    "gulp-dart-sass": "^1.0.2",
+    "leaflet": "^1.8.0"
   }
 }
