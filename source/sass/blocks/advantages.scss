@@ -39,7 +39,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-top: 60px;
+    padding-top: 80px;
   }
 
   @media (min-width: $desktop-width) {
@@ -123,7 +123,7 @@
   margin-bottom: 36px;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 80px;
+    margin-bottom: 62px;
   }
 }
 
@@ -146,6 +146,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     margin: 0 auto;
+    margin-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {

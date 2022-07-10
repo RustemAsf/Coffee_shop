@@ -108,6 +108,7 @@
   @media (min-width: $tablet-width) {
     width: 728px;
     margin: 0 auto;
+    padding-top: 150px;
   }
 
   @media (min-width: $desktop-width) {
@@ -149,7 +150,7 @@
   @media (min-width: $tablet-width) {
     font-size: 42px;
     line-height: 64px;
-    margin-bottom: 30px;
+    margin-bottom: 21px;
   }
 }
 
@@ -534,7 +535,7 @@
   @media (min-width: $tablet-width) {
     padding: 50px 110px 0 109px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -575,6 +576,7 @@
   @media (min-width: $tablet-width) {
     width: 291px;
     justify-content: space-between;
+    margin-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -705,6 +707,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 56px;
   }
 
   @media (min-width: $desktop-width) {
@@ -727,3 +730,4 @@
 .catalog__slogan {
   margin-bottom: 24px;
 }
+

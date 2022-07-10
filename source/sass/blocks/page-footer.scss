@@ -50,6 +50,9 @@
 }
 
 .page-footer__logo-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
   @media (min-width: $desktop-width) {
     display: none;
   }
@@ -59,7 +62,7 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: none;
+    display: block;
   }
 
   @media (min-width: $desktop-width) {
