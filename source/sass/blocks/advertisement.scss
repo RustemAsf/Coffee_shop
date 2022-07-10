@@ -32,7 +32,7 @@
   line-height: 20px;
   text-align: center;
   color: #333333;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
@@ -63,8 +63,8 @@
 
 .advertisement__reviews-prev {
   position: absolute;
-  top: 329px;
-  left: -19px;
+  top: 317px;
+  left: -20px;
   border: 0;
   background: 0;
   cursor: pointer;
@@ -84,8 +84,8 @@
 
 .advertisement__review-next {
   position: absolute;
-  top: 329px;
-  left: 274px;
+  top: 316px;
+  left: 278px;
   border: 0;
   background: 0;
   cursor: pointer;
@@ -124,6 +124,19 @@
   &--active {
     background-color: #7859cf;
   }
+
+  &:hover {
+    background: rgba(120, 89, 207, 0.25);
+  }
+
+  &:active {
+    background: #7859cf;
+  }
+
+  &:disabled {
+    background: #bdbdbd;
+  }
+
 }
 
 .advertisement__drink-name {
@@ -175,7 +188,7 @@
 .advertisement__promo-img {
   min-height: 280px;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 24px;
   background-image: url("../img/flat-white-mobile.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -275,4 +288,17 @@
   border: none;
   height: 40px;
   padding: 8px 20px 8px 20px;
+
+  &:hover {
+    background: #9070ec;
+  }
+
+  &:active {
+    background: #593cac;
+  }
+
+  &:disabled {
+    background: #bdbdbd;
+  }
+
 }

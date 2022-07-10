@@ -48,8 +48,25 @@
   }
 }
 
+
 .site-list__link {
   text-decoration: none;
+
+  &:hover {
+    color: #7859cf;
+    background: #ffffff;
+  }
+
+  &:active {
+    background: #593cac;
+    box-shadow: 0 8px 0 8px #f0ebff, 0 8px 0 8px #f0ebff;
+    background: #f0ebff;
+  }
+
+  &:disabled {
+    background: #bdbdbd;
+  }
+
 }
 
 .site-list__item {

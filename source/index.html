@@ -20,7 +20,7 @@
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__wrapper-desktop">
         <div class="main-nav__logo-text">
-          <a class="main-nav__logo-link logo-drink" href="index.html">
+          <a class="main-nav__logo-link logo-drink" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="logo-drink__mobile" width="32" height="36">
               <use xlink:href="img/sprite.svg#logo-drink-mobile"></use>
             </svg>
@@ -51,15 +51,19 @@
         </div>
         <div class="main-nav__button-wrapper">
           <div class="main-nav__user-wrapper">
-            <svg class="user-logo" width="16" height="16">
-              <use xlink:href="img/sprite.svg#user-logo"></use>
-            </svg>
+            <a class="main-nav__user-logo" href="#">
+              <svg class="user-logo" width="16" height="16">
+                <use xlink:href="img/sprite.svg#user-logo"></use>
+              </svg>
+            </a>
             <span class="main-nav__user-text">Войти</span>
           </div>
           <div class="main-nav__union-wrapper">
-            <svg class="union-logo" width="16" height="16">
-              <use xlink:href="img/sprite.svg#union-logo"></use>
-            </svg>
+            <a class="main-nav__union-logo" href="#">
+              <svg class="union-logo" width="16" height="16">
+                <use xlink:href="img/sprite.svg#union-logo"></use>
+              </svg>
+            </a>
             <span class="main-nav__user-text">Корзина</span>
           </div>
           <button class="main-nav__toggle" type="button">
@@ -252,37 +256,37 @@
               <legend class="catalog__title-filter">Страна произрастания</legend>
               <ul class="catalog__list catalog__list--country">
                 <li class="catalog__item">
-                  <label class="catalog__control-check" for="brazil">
-                    <input class="catalog__control-block" type="checkbox" id="brazil" checked>
-                    <span class="catalog__mark catalog__mark--check"></span>
+                  <label class="catalog__checkbox-ios">
+                    <input type="checkbox" checked>
+                    <span class="catalog__checkbox-ios-switch"></span>
                     <span class="catalog__control-label">Бразилия</span>
                   </label>
                 </li>
                 <li class="catalog__item">
-                  <label class="catalog__control-check" for="ethiopia">
-                    <input class="catalog__control-block" type="checkbox" id="ethiopia">
-                    <span class="catalog__mark catalog__mark--check"></span>
+                  <label class="catalog__checkbox-ios">
+                    <input type="checkbox">
+                    <span class="catalog__checkbox-ios-switch"></span>
                     <span class="catalog__control-label">Эфиопия</span>
                   </label>
                 </li>
                 <li class="catalog__item">
-                  <label class="catalog__control-check" for="сolombia">
-                    <input class="catalog__control-block" type="checkbox" id="сolombia">
-                    <span class="catalog__mark catalog__mark--check"></span>
+                  <label class="catalog__checkbox-ios">
+                    <input type="checkbox">
+                    <span class="catalog__checkbox-ios-switch"></span>
                     <span class="catalog__control-label">Колумбия</span>
                   </label>
                 </li>
                 <li class="catalog__item">
-                  <label class="catalog__control-check" for="costa-rica">
-                    <input class="catalog__control-block" type="checkbox" id="costa-rica">
-                    <span class="catalog__mark catalog__mark--check"></span>
+                  <label class="catalog__checkbox-ios">
+                    <input type="checkbox">
+                    <span class="catalog__checkbox-ios-switch"></span>
                     <span class="catalog__control-label">Коста-Рика</span>
                   </label>
                 </li>
                 <li class="catalog__item">
-                  <label class="catalog__control" for="peru">
-                    <input class="catalog__control-block" type="checkbox" id="peru">
-                    <span class="catalog__mark catalog__mark--check"></span>
+                  <label class="catalog__checkbox-ios">
+                    <input type="checkbox" disabled>
+                    <span class="catalog__checkbox-ios-switch"></span>
                     <span class="catalog__control-label">Перу</span>
                   </label>
                 </li>
@@ -309,20 +313,22 @@
             </div>
             <ul class="catalog__list-filter">
               <li class="catalog__item-filter catalog__item-filter--one">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1440px)"
-                    srcset="img/flat-white-mobile-filter.webp 1x, img/flat-white-mobile-filter@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/flat-white-mobile-filter.webp 1x, img/flat-white-mobile-filter@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 320px)"
-                    srcset="img/flat-white-mobile-filter.webp 1x, img/flat-white-mobile-filter@2x.webp 2x">
-                  <source media="(min-width: 1440px)"
-                    srcset="img/flat-white-mobile-filter-filter.png 1x, img/flat-white-mobile-filter-filter@2x.png 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/flat-white-mobile-filter.png 1x, img/flat-white-mobile-filter@2x.png 2x">
-                  <img class="catalog__image-filter" src="img/flat-white-mobile-filter.png"
-                    srcset="img/flat-white-mobile-filter@2x.png 2x" alt="Фото товара">
-                </picture>
+                <a class="catalog__item-filter-link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/flat-white-mobile-filter.webp 1x, img/flat-white-mobile-filter@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/flat-white-mobile-filter.webp 1x, img/flat-white-mobile-filter@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)"
+                      srcset="img/flat-white-mobile-filter.webp 1x, img/flat-white-mobile-filter@2x.webp 2x">
+                    <source media="(min-width: 1440px)"
+                      srcset="img/flat-white-mobile-filter-filter.png 1x, img/flat-white-mobile-filter-filter@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/flat-white-mobile-filter.png 1x, img/flat-white-mobile-filter@2x.png 2x">
+                    <img class="catalog__image-filter" src="img/flat-white-mobile-filter.png"
+                      srcset="img/flat-white-mobile-filter@2x.png 2x" alt="Фото товара">
+                  </picture>
+                </a>
                 <h3 class="catalog__title-sorting">Декаф Флэт Уайт</h3>
                 <p class="catalog__text-filter">
                   Кофе без кофеина из Эфиопии с натуральным фермерским молоком
@@ -340,20 +346,22 @@
                 </div>
               </li>
               <li class="catalog__item-filter catalog__item-filter--two">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1440px)"
-                    srcset="img/flat-blue-filter.webp 1x, img/flat-blue-filter@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/flat-blue-filter.webp 1x, img/flat-blue-filter@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 320px)"
-                    srcset="img/flat-blue-filter.webp 1x, img/flat-blue-filter@2x.webp 2x">
-                  <source media="(min-width: 1440px)"
-                    srcset="img/flat-blue-filter.png 1x, img/flat-blue-filter@2x.png 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/flat-blue-filter.png 1x, img/flat-blue-filter@2x.png 2x">
-                  <img class="catalog__image-filter" src="img/flat-blue-filter.png"
-                    srcset="img/flat-blue-filter@2x.png 2x" alt="Фото товара">
-                </picture>
+                <a class="catalog__item-filter-link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/flat-blue-filter.webp 1x, img/flat-blue-filter@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/flat-blue-filter.webp 1x, img/flat-blue-filter@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)"
+                      srcset="img/flat-blue-filter.webp 1x, img/flat-blue-filter@2x.webp 2x">
+                    <source media="(min-width: 1440px)"
+                      srcset="img/flat-blue-filter.png 1x, img/flat-blue-filter@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/flat-blue-filter.png 1x, img/flat-blue-filter@2x.png 2x">
+                    <img class="catalog__image-filter" src="img/flat-blue-filter.png"
+                      srcset="img/flat-blue-filter@2x.png 2x" alt="Фото товара">
+                  </picture>
+                </a>
                 <h3 class="catalog__title-sorting">Декаф Флэт Уайт</h3>
                 <p class="catalog__text-filter">
                   Кофе без кофеина из Эфиопии с натуральным фермерским молоком
@@ -371,20 +379,22 @@
                 </div>
               </li>
               <li class="catalog__item-filter catalog__item-filter--three">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1440px)"
-                    srcset="img/flat-black-filter.webp 1x, img/flat-black-filter@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/flat-black-filter.webp 1x, img/flat-black-filter@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 320px)"
-                    srcset="img/flat-black-filter.webp 1x, img/flat-black-filter@2x.webp 2x">
-                  <source media="(min-width: 1440px)"
-                    srcset="img/flat-black-filter.png 1x, img/flat-black-filter@2x.png 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/flat-blue-filter.png 1x, img/flat-blue-filter@2x.png 2x">
-                  <img class="catalog__image-filter" src="img/flat-black-filter.png"
-                    srcset="img/flat-black-filter@2x.png 2x" alt="Фото товара">
-                </picture>
+                <a class="catalog__item-filter-link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/flat-black-filter.webp 1x, img/flat-black-filter@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/flat-black-filter.webp 1x, img/flat-black-filter@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)"
+                      srcset="img/flat-black-filter.webp 1x, img/flat-black-filter@2x.webp 2x">
+                    <source media="(min-width: 1440px)"
+                      srcset="img/flat-black-filter.png 1x, img/flat-black-filter@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/flat-blue-filter.png 1x, img/flat-blue-filter@2x.png 2x">
+                    <img class="catalog__image-filter" src="img/flat-black-filter.png"
+                      srcset="img/flat-black-filter@2x.png 2x" alt="Фото товара">
+                  </picture>
+                </a>
                 <h3 class="catalog__title-sorting">Декаф Флэт Уайт</h3>
                 <p class="catalog__text-filter">
                   Кофе без кофеина из Эфиопии с натуральным фермерским молоком
@@ -402,20 +412,22 @@
                 </div>
               </li>
               <li class="catalog__item-filter catalog__item-filter--four">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1440px)"
-                    srcset="img/flat-pink-filter.webp 1x, img/flat-pink-filter@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/flat-pink-filter.webp 1x, img/flat-pink-filter@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 320px)"
-                    srcset="img/flat-pink-filter.webp 1x, img/flat-pink-filter@2x.webp 2x">
-                  <source media="(min-width: 1440px)"
-                    srcset="img/flat-pink-filter.png 1x, img/flat-pink-filter@2x.png 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/flat-brown-filter.png 1x, img/flat-brown-filter@2x.png 2x">
-                  <img class="catalog__image-filter" src="img/flat-pink-filter.png"
-                    srcset="img/flat-pink-filter@2x.png 2x" alt="Фото товара">
-                </picture>
+                <a class="catalog__item-filter-link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/flat-pink-filter.webp 1x, img/flat-pink-filter@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/flat-pink-filter.webp 1x, img/flat-pink-filter@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)"
+                      srcset="img/flat-pink-filter.webp 1x, img/flat-pink-filter@2x.webp 2x">
+                    <source media="(min-width: 1440px)"
+                      srcset="img/flat-pink-filter.png 1x, img/flat-pink-filter@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/flat-brown-filter.png 1x, img/flat-brown-filter@2x.png 2x">
+                    <img class="catalog__image-filter" src="img/flat-pink-filter.png"
+                      srcset="img/flat-pink-filter@2x.png 2x" alt="Фото товара">
+                  </picture>
+                </a>
                 <h3 class="catalog__title-sorting">Декаф Флэт Уайт</h3>
                 <p class="catalog__text-filter">
                   Кофе без кофеина из Эфиопии с натуральным фермерским молоком
@@ -433,20 +445,22 @@
                 </div>
               </li>
               <li class="catalog__item-filter catalog__item-filter--five">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1440px)"
-                    srcset="img/flat-brown-filter.webp 1x, img/flat-brown-filter@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/flat-brown-filter.webp 1x, img/flat-brown-filter@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 320px)"
-                    srcset="img/flat-brown-filter.webp 1x, img/flat-brown-filter@2x.webp 2x">
-                  <source media="(min-width: 1440px)"
-                    srcset="img/flat-brown-filter.png 1x, img/flat-brown-filter@2x.png 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/flat-brown-filter.png 1x, img/flat-brown-filter@2x.png 2x">
-                  <img class="catalog__image-filter" src="img/flat-brown-filter.png"
-                    srcset="img/flat-brown-filter@2x.png 2x" alt="Фото товара">
-                </picture>
+                <a class="catalog__item-filter-link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/flat-brown-filter.webp 1x, img/flat-brown-filter@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/flat-brown-filter.webp 1x, img/flat-brown-filter@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)"
+                      srcset="img/flat-brown-filter.webp 1x, img/flat-brown-filter@2x.webp 2x">
+                    <source media="(min-width: 1440px)"
+                      srcset="img/flat-brown-filter.png 1x, img/flat-brown-filter@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/flat-brown-filter.png 1x, img/flat-brown-filter@2x.png 2x">
+                    <img class="catalog__image-filter" src="img/flat-brown-filter.png"
+                      srcset="img/flat-brown-filter@2x.png 2x" alt="Фото товара">
+                  </picture>
+                </a>
                 <h3 class="catalog__title-sorting">Декаф Флэт Уайт</h3>
                 <p class="catalog__text-filter">
                   Кофе без кофеина из Эфиопии с натуральным фермерским молоком
@@ -464,20 +478,22 @@
                 </div>
               </li>
               <li class="catalog__item-filter catalog__item-filter--six">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1440px)"
-                    srcset="img/flat-yellow-filter.webp 1x, img/flat-yellow-filter@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/flat-yellow-filter.webp 1x, img/flat-yellow-filter@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 320px)"
-                    srcset="img/flat-yellow-filter.webp 1x, img/flat-yellow-filter@2x.webp 2x">
-                  <source media="(min-width: 1440px)"
-                    srcset="img/flat-yellow-filter.png 1x, img/flat-yellow-filter@2x.png 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/flat-yellow-filter.png 1x, img/flat-yellow-filter@2x.png 2x">
-                  <img class="catalog__image-filter" src="img/flat-yellow-filter.png"
-                    srcset="img/flat-yellow-filter@2x.png 2x" alt="Фото товара">
-                </picture>
+                <a class="catalog__item-filter-link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/flat-yellow-filter.webp 1x, img/flat-yellow-filter@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/flat-yellow-filter.webp 1x, img/flat-yellow-filter@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)"
+                      srcset="img/flat-yellow-filter.webp 1x, img/flat-yellow-filter@2x.webp 2x">
+                    <source media="(min-width: 1440px)"
+                      srcset="img/flat-yellow-filter.png 1x, img/flat-yellow-filter@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/flat-yellow-filter.png 1x, img/flat-yellow-filter@2x.png 2x">
+                    <img class="catalog__image-filter" src="img/flat-yellow-filter.png"
+                      srcset="img/flat-yellow-filter@2x.png 2x" alt="Фото товара">
+                  </picture>
+                </a>
                 <h3 class="catalog__title-sorting">Декаф Флэт Уайт</h3>
                 <p class="catalog__text-filter">
                   Кофе без кофеина из Эфиопии с натуральным фермерским молоком
@@ -540,21 +556,21 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="https://vk.com/htmlacademy" aria-label="вконтакте">
-                <svg width="20" height="20">
+                <svg class="logo-vk" width="20" height="20">
                   <use xlink:href="img/sprite.svg#logo-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://www.pinterest.ru/keks_is_html_academy/" aria-label="пинтерест">
-                <svg width="20" height="20">
+                <svg class="logo-pinterest" width="20" height="20">
                   <use xlink:href="img/sprite.svg#logo-pinterest"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://www.ok.ru/htmlacademy" aria-label="ютуб">
-                <svg width="20" height="20">
+                <svg class="logo-ok" width="20" height="20">
                   <use xlink:href="img/sprite.svg#logo-ok"></use>
                 </svg>
               </a>
@@ -637,8 +653,9 @@
         </div>
       </div>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано в HTML Academy</b>
+
         <a class="copyright__link" href="https://htmlacademy.ru" aria-label="лэйбл академии">
+          Разработано в HTML Academy
           <svg class="copyright__academy" width="12" height="16">
             <use xlink:href="img/sprite.svg#logo-academy"></use>
           </svg>
